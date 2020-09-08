@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>タイピングUI</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- 音楽 -->
+  <audio id="chaimu" src="music/chaimu.mp3"></audio>
+  <audio id="akatonbo" src="music/akatonbo.mp3"></audio>
+  <audio id="ieji" src="music/ieji.mp3"></audio>
+  <audio id="aogebatoutosi" src="music/aogebatoutosi.mp3"></audio>
+   
+  <!-- 効果音 -->
+  <audio id="soundAfterend" src="sound/afterend.mp3"></audio>
+  <audio id="soundAfterend" src="sound/afterend.mp3"></audio>
+
+
+
+  <audio id="soundComment1" src="sound/comment1.mp3"></audio>
+  <audio id="soundComment2" src="sound/comment2.mp3"></audio>
+  <audio id="soundCorrectAnswer" src="sound/correct.mp3"></audio>
+  <audio id="soundGamestart" src="sound/gamestart.mp3"></audio>
+  <audio id="soundWordcorrect" src="sound/wordscore.mp3"></audio>
+  <audio id="soundWrongAnswer" src="sound/wrong2.mp3"></audio>
+  <audio id="soundCorrectType" src="sound/score.mp3"></audio>
+  <audio id="soundMissType" src="sound/gamestart.mp3"></audio>
+  <audio id="soundResultdetail" src="sound/resultdetail.mp3"></audio>
+
+  <div class="container">
+    <main class="bg-img">
+      <img src="img/blackboard.jpg" alt="黒板のイメーイです">
+      <section id="start-board">Press Enter</section>
+      <section id="black-board" class="disappear">
+        <div id="question">
+          <h4>
+            問<span>1</span>　次の単語の和訳を選べ
+          </h4>
+          <h2 class="e-question disappear"></h2>
+        </div>
+        <div id="answer" class="disappear">
+        </div>
+        <div class="info disappear">
+          <div id="score-word"> 正答数：<span>0</span>&nbsp;問</div>
+          <div id="timer">残り時間：<span>15</span></div>
+        </div>
+      </section>
+      <section id="score-board">
+        <div id="total-score"></div>
+        <div id="kekkakun">
+            <p id="score-comment"></p>
+          </div>
+        <ul class="result">
+          <li id="scoreResult">正答数：<span>0</span></li>
+          <li id="typeScore">正打数：<span>0</span></li>
+          <li id="typeMiss">タイプミス：<span>0</span></li>
+          <li id="accuracy">正打率：<span>0</span></li>
+          <li><a href="">リプレイ</a></li>
+        </ul>
+      </section>
+
+    </main>
+
+  </div>
+  <script src="js/play.js"></script>
+</body>
+
+</html>
